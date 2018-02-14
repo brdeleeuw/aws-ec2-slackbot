@@ -1,3 +1,4 @@
 slack_credentials.py
 *.pyc
 instances.json
+.idea
