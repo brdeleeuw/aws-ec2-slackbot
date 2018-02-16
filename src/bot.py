@@ -3,7 +3,6 @@
 from slackclient import SlackClient
 from credentials.slack_credentials import auth_token
 from aws_functions import * 
-from pprint import pprint
 
 SLACK_TOKEN  = auth_token
 

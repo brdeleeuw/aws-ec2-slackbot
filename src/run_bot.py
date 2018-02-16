@@ -19,7 +19,6 @@ def main():
 		elif no_of_running_instances > 1:
 			MESSAGE = "Keypair `{}` has {} running EC2 instances with ids `{}`".format(keypair, no_of_running_instances, ids_of_running_instances)
 		elif no_of_running_instances == 0:
-			# MESSAGE = "Keypair `{}` has {} running EC2 instances. Congrats, you avoided the shame hat.".format(keypair, no_of_running_instances)
 			continue
 		slack_user_id         = get_slack_user_id(last_name)
 		slack_user_channel_id = get_slack_user_channel_id(slack_user_id)
