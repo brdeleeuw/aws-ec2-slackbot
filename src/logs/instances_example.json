@@ -1,0 +1,120 @@
+{
+    "Reservations": [
+        {
+            "Instances": [
+                {
+                    "InstanceType": "",
+                    "EbsOptimized": ,
+                    "LaunchTime": "",
+                    "NetworkInterfaces": [
+                        {
+                            "OwnerId": "",
+                            "Groups": [
+                                {
+                                    "GroupId": "",
+                                    "GroupName": ""
+                                }
+                            ],
+                            "Description": "",
+                            "SubnetId": "",
+                            "Attachment": {
+                                "DeleteOnTermination": ,
+                                "AttachmentId": "",
+                                "Status": "",
+                                "DeviceIndex": ,
+                                "AttachTime": ""
+                            },
+                            "PrivateDnsName": "",
+                            "PrivateIpAddress": "",
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateIpAddress": "",
+                                    "PrivateDnsName": "",
+                                    "Primary": 
+                                }
+                            ],
+                            "SourceDestCheck": ,
+                            "NetworkInterfaceId": "",
+                            "MacAddress": "",
+                            "Status": "",
+                            "VpcId": ""
+                        }
+                    ],
+                    "KeyName": "",
+                    "PrivateDnsName": "",
+                    "SecurityGroups": [
+                        {
+                            "GroupId": "",
+                            "GroupName": ""
+                        }
+                    ],
+                    "IamInstanceProfile": {
+                        "Arn": "",
+                        "Id": ""
+                    },
+                    "EnaSupport": ,
+                    "Monitoring": {
+                        "State": ""
+                    },
+                    "ProductCodes": [],
+                    "ClientToken": "",
+                    "RootDeviceName": "",
+                    "ImageId": "-",
+                    "State": {
+                        "Code": ,
+                        "Name": ""
+                    },
+                    "Hypervisor": "",
+                    "SubnetId": "-",
+                    "StateTransitionReason": "User initiated ()",
+                    "RootDeviceType": "",
+                    "Tags": [
+                        {
+                            "Value": "",
+                            "Key": ""
+                        },
+                        {
+                            "Value": "",
+                            "Key": ""
+                        },
+                        {
+                            "Value": "",
+                            "Key": ""
+                        }
+                    ],
+                    "BlockDeviceMappings": [
+                        {
+                            "Ebs": {
+                                "DeleteOnTermination": ,
+                                "Status": "attached",
+                                "VolumeId": "",
+                                "AttachTime": "-"
+                            },
+                            "DeviceName": "/"
+                        }
+                    ],
+                    "InstanceId": "",
+                    "PrivateIpAddress": "",
+                    "PublicDnsName": "",
+                    "AmiLaunchIndex": ,
+                    "SourceDestCheck": ,
+                    "Architecture": "",
+                    "VirtualizationType": "",
+                    "Placement": {
+                        "Tenancy": "default",
+                        "AvailabilityZone": "",
+                        "GroupName": ""
+                    },
+                    "VpcId": "",
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+                        "Code": "Client.UserInitiatedShutdown"
+                    }
+                }
+            ],
+            "OwnerId": "",
+            "ReservationId": "r-",
+            "Groups": []
+        }
+    ]
+}

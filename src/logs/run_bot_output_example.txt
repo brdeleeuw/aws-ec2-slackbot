@@ -1,0 +1,11 @@
+1 reservations found
+1 instances found
+0 EC2 instance(s) currently running
+1 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:04.456320
+john_doe_keypair
+ABCD12345
+CDEFG6789
+
+

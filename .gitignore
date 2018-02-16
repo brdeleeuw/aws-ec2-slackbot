@@ -1,5 +1,6 @@
 slack_credentials.py
 *.pyc
 instances.json
+run_bot_output.txt 
 .idea
 user_info.py
