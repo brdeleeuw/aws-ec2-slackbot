@@ -2,7 +2,6 @@
 
 import subprocess as sp 
 import json 
-from pprint import pprint
 
 def create_log_with_all_ec2_instances(keypair):
 	sp.call("aws ec2 describe-instances --filters \"Name=key-name, Values={}\" > /home/bradley/slack_bot/src/logs/instances.json".format(keypair), shell=True)

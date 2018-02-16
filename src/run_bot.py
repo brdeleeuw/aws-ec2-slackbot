@@ -3,6 +3,7 @@
 from bot import *
 from aws_functions import * 
 from user_information.user_info import last_names_and_keypairs
+import datetime
 
 def main():
 	for user in last_names_and_keypairs:
@@ -13,18 +14,21 @@ def main():
 		no_of_running_instances  = find_running_ec2_instances(reservations)[0]
 		ids_of_running_instances = find_running_ec2_instances(reservations)[1]
 		
-		if no_of_running_instances == 1:
+		if no_of_running_instances  == 1:
 			MESSAGE = "Keypair `{}` has {} running EC2 instance with id `{}`".format(keypair, no_of_running_instances, ids_of_running_instances[0] )
 		elif no_of_running_instances > 1:
-			MESSAGE = "Keypair `{}` has {} running EC2 instances with ids `{}`".format(keypair, no_of_running_instances, ids_of_running_instances )
+			MESSAGE = "Keypair `{}` has {} running EC2 instances with ids `{}`".format(keypair, no_of_running_instances, ids_of_running_instances)
 		elif no_of_running_instances == 0:
-			MESSAGE = "Keypair `{}` has {} running EC2 instances with ids `{}`".format(keypair, no_of_running_instances, ids_of_running_instances )
-		
+			# MESSAGE = "Keypair `{}` has {} running EC2 instances. Congrats, you avoided the shame hat.".format(keypair, no_of_running_instances)
+			continue
 		slack_user_id         = get_slack_user_id(last_name)
-		print(slack_user_id)
 		slack_user_channel_id = get_slack_user_channel_id(slack_user_id)
-		print(slack_user_channel_id)
 		send_slack_message(slack_user_channel_id, MESSAGE)
+		
+		try: 
+			print("{}\n{}\n{}\n{}\n".format(datetime.datetime.now(), keypair, slack_user_id, slack_user_channel_id))
+		except:
+			continue
 
 if __name__ == "__main__":
     main()

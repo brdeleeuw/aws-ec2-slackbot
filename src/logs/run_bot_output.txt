@@ -1,0 +1,120 @@
+1 reservations found
+1 instances found
+0 EC2 instance(s) currently running
+1 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:04.456320
+bradley_dl_keypair
+U45Q53U7P
+D98UFRFTN
+
+1 reservations found
+1 instances found
+0 EC2 instance(s) currently running
+1 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:06.500878
+nico_keypair
+U4WRT804S
+D98A125LY
+
+1 reservations found
+1 instances found
+0 EC2 instance(s) currently running
+1 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:08.307532
+tim_butterbrod_keypair
+U3M32N8DD
+D99NEACTF
+
+2 reservations found
+2 instances found
+0 EC2 instance(s) currently running
+2 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:10.106635
+ruben_m_keypair
+U04DVUX1T
+[]
+
+0 reservations found
+0 instances found
+0 EC2 instance(s) currently running
+0 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:11.929896
+stijn_j_keypair
+U44UPKTMM
+D994J03T3
+
+0 reservations found
+0 instances found
+0 EC2 instance(s) currently running
+0 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:14.065329
+erik_d_keypair
+U04P90E9M
+[]
+
+0 reservations found
+0 instances found
+0 EC2 instance(s) currently running
+0 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:16.272618
+gido_dh_keypair
+U0DL0M42C
+[]
+
+0 reservations found
+0 instances found
+0 EC2 instance(s) currently running
+0 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:20.701411
+stan_r_keypair
+U2QKG49FX
+[]
+
+2 reservations found
+2 instances found
+2 EC2 instance(s) currently running
+2 instances found
+2 EC2 instance(s) currently running
+2018-02-15 17:30:25.197172
+tessa_keypair
+U56S361LL
+[]
+
+0 reservations found
+0 instances found
+0 EC2 instance(s) currently running
+0 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:27.866694
+siebe_ds
+U04E9BCKD
+[]
+
+0 reservations found
+0 instances found
+0 EC2 instance(s) currently running
+0 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:29.940922
+marjolein_k_keypair
+U2AGB2F27
+D99KZE8LS
+
+0 reservations found
+0 instances found
+0 EC2 instance(s) currently running
+0 instances found
+0 EC2 instance(s) currently running
+2018-02-15 17:30:31.768614
+thom_h_keypair
+U04PNG814
+[]
+

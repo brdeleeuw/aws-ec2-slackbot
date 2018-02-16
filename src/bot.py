@@ -3,6 +3,7 @@
 from slackclient import SlackClient
 from credentials.slack_credentials import auth_token
 from aws_functions import * 
+from pprint import pprint
 
 SLACK_TOKEN  = auth_token
 
@@ -36,20 +37,5 @@ def send_slack_message(user_channel_id, message, as_user=True):
 	slack_client.api_call("chat.postMessage", channel=user_channel_id,
                                    text=message, as_user=False)
 		
-
-	# for channel_id in channel_ids:
-
-			# if channel_id.get("user") == user_slack_id:
-				# user_channel_id = channel_id.get("id")
-
-# def send_slack_message(user_slack_id, message, as_user=True):
-#     api_call = slack_client.api_call("im.list")
-#     if api_call.get('ok'):
-#         for im in api_call.get("ims"):
-#             if im.get("user") == user_slack_id:
-#                 im_channel = im.get("id")
-#                 slack_client.api_call("chat.postMessage", channel=im_channel,
-#                                    text=message, as_user=True)
-
 
                 
