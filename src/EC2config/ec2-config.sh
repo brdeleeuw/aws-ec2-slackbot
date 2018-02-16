@@ -5,6 +5,7 @@
 # Then copy this file to the remote instance (e.g. by using Filezilla) 
 # Run it by typing `sh ec2-config.sh` in the command line
 
+
 ## Installing/Updating Python and necessary package managers ##
 sudo apt-get update --yes
 sudo apt install python-pip --yes
@@ -24,27 +25,14 @@ pip3 install sklearn
 pip3 install tqdm
 
 ## Setting up your directories ##
-mkdir thesis
-cd thesis
+mkdir src
+cd src
 
 ## Use git clone to clone a project directly into the your instance, otherwise use Filezilla to transfer projects ##
-git clone -b develop https://ghg-bradley@bitbucket.org/bluemangodatascience/thesis___causal_impact___acdc/src.git
+git clone -b <branch> https://<git-username>@bitbucket.org/bluemangodatascience/<projectname>.git
 
 ## Continue setting up your desired directory structure ##
-mkdir data
-cd data
-mkdir raw
-mkdir processed
-mkdir temp
-
-cd raw
-mkdir ENE_november
-mkdir STL_november
-
-cd ~/thesis/data/raw/ENE_november
-mkdir unexposed
-
-cd ~/thesis/data/raw/STL_november
-mkdir unexposed
+mkdir dirname
+cd ~/src/dirname/....
 
 exit 0 
