@@ -7,6 +7,7 @@ Simple bot for the Slack messaging app that checks for active EC2 instances (Ama
 - Python 2.7
 - Slackclient Python module 
 - Slack account / workspace
+- Slack API token (https://api.slack.com/)
 - Amazon Web Services (AWS) account 
 - AWS Command Line Interface (CLI) configured
 
@@ -24,8 +25,6 @@ Adjust ```user_info_example.py```:
 - Add the names of your AWS profiles 
 - Add the keypair-username combinations as shown in the example. 
 - Save as ```user_info.py```.
-
-Adjust USERNAME in the ```aws_functions.py```
 
 To make the run_bot.py file executable, cd into the directory and make it executable:
 
