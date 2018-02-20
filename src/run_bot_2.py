@@ -15,9 +15,9 @@ def main():
 			ids_of_running_instances = find_running_ec2_instances(reservations)[1]
 			
 			if no_of_running_instances  == 1:
-				MESSAGE = "Keypair `{}` has {} running EC2 instance with id `{}`".format(keypair, no_of_running_instances, ids_of_running_instances[0] )
+				MESSAGE = "Keypair `{}` still has {} running EC2 instance with id `{}`. Don't forget to terminate it if this is not on purpose! I will only send you one more reminder today...".format(keypair, no_of_running_instances, ids_of_running_instances[0] )
 			elif no_of_running_instances > 1:
-				MESSAGE = "Keypair `{}` has {} running EC2 instances with ids `{}`".format(keypair, no_of_running_instances, ids_of_running_instances)
+				MESSAGE = "Keypair `{}` still has {} running EC2 instances with ids `{}`. Don't forget to terminate them if this is not on purpose! I will only send you one more reminder today...".format(keypair, no_of_running_instances, ids_of_running_instances)
 			elif no_of_running_instances == 0:
 				continue
 			slack_user_id         = get_slack_user_id(last_name)

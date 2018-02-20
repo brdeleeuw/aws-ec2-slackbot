@@ -5,7 +5,6 @@ from credentials.slack_credentials import auth_token
 from aws_functions import * 
 
 SLACK_TOKEN  = auth_token
-
 slack_client = SlackClient(SLACK_TOKEN)
 
 def get_slack_user_id(user_last_name):
