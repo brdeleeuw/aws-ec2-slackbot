@@ -1,5 +1,5 @@
 # username on the operating system
-USERNAME = ["pi"]
+USERNAME = "pi"
 
 
 # AWS profile names from the ~/.aws/config file
