@@ -39,8 +39,8 @@ Then add whenever you want the file to run. Example of a crontab entry to send a
 ```
 #min    #hour   day-of-month    month   day-of-week     commannd
 30       16           *             *        *        cd ~/slack_bot/src/ && /usr/bin/python ~/slack_bot/src/run_bot.py  >> ~/slack_bot/src/logs/run_bot_output.txt  2>&1
-00       17           *             *        *        cd ~/slack_bot/src/ && /usr/bin/python ~/slack_bot/src/run_bot.py  >> ~/slack_bot/src/logs/run_bot_output.txt  2>&1
-30       17           *             *        *        cd ~/slack_bot/src/ && /usr/bin/python ~/slack_bot/src/run_bot.py  >> ~/slack_bot/src/logs/run_bot_output.txt  2>&1
+00       17           *             *        *        cd ~/slack_bot/src/ && /usr/bin/python ~/slack_bot/src/run_bot_2.py  >> ~/slack_bot/src/logs/run_bot_output_2.txt  2>&1
+30       17           *             *        *        cd ~/slack_bot/src/ && /usr/bin/python ~/slack_bot/src/run_bot_3.py  >> ~/slack_bot/src/logs/run_bot_output_3.txt  2>&1
 ```
 
 
