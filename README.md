@@ -2,14 +2,19 @@
 
 Simple bot for the Slack messaging app that checks for active EC2 instances (Amazon Web Services) and sends a reminder.
 
-Requirements:
+## Requirements:
 
 - Python 2.7
-- Slackclient Python module
+- Slackclient Python module 
 - Slack account / workspace
 - Amazon Web Services (AWS) account 
 - AWS Command Line Interface (CLI) configured
 
+## Configuration 
+
+Ìf you don't have the Python Slackclient module:
+
+```pip install slackclient```
 
 Adjust ```slack_credentials_example.py``` file and add your auth token. Save as ```slack_credentials.py```
 
@@ -18,8 +23,7 @@ Adjust ```user_info_example.py```:
 - Add the username on your operating system
 - Add the names of your AWS profiles 
 - Add the keypair-username combinations as shown in the example. 
-
-Save as ```user_info.py```.
+- Save as ```user_info.py```.
 
 Adjust USERNAME in the ```aws_functions.py```
 
@@ -29,6 +33,7 @@ To make the run_bot.py file executable, cd into the directory and make it execut
 cd ~slack_bot/src
 chmod +x run_bot.py
 ```
+## Running automatically
 
 To send reminders, we can have the file run in a cronjob.
 
