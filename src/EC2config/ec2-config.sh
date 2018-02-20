@@ -29,7 +29,7 @@ mkdir src
 cd src
 
 ## Use git clone to clone a project directly into the your instance, otherwise use Filezilla to transfer projects ##
-git clone -b <branch> https://<git-username>@bitbucket.org/bluemangodatascience/<projectname>.git
+git clone -b <branch> https://<git-username>@<repo link>.git
 
 ## Continue setting up your desired directory structure ##
 mkdir dirname
