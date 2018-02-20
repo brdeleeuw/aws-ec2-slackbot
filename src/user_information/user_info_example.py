@@ -1,3 +1,7 @@
+# username on the operating system
+USERNAME = ["pi"]
+
+
 # AWS profile names from the ~/.aws/config file
 profiles = ["user1", "user2"]
 

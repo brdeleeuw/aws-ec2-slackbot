@@ -1,11 +1,15 @@
-#!/usr/bin/pythonrun_bot_output.txt 
+#!/usr/bin/python 
 
 import subprocess as sp 
 import json 
+import os 
+from user_information.user_info import USERNAME
+
+log_file_path = "/home/{}/slack_bot/src/logs/instances.json".format(USERNAME)
 
 def create_log_with_all_ec2_instances(keypair, profile):
-	sp.call("aws ec2 describe-instances --filters \"Name=key-name, Values={}\" --profile {} > /home/bradley/slack_bot/src/logs/instances.json".format(keypair, profile), shell=True)
-	data         = json.load(open("/home/bradley/slack_bot/src/logs/instances.json")) 
+	sp.call("aws ec2 describe-instances --filters \"Name=key-name, Values={}\" --profile {} > {}".format(keypair, profile, log_file_path), shell=True)
+	data         = json.load(open(log_file_path)) 
 	reservations = data["Reservations"]
 	print("{} reservations found".format(len(reservations)))
 	return reservations
