@@ -25,7 +25,8 @@ Adjust USERNAME in the ```aws_functions.py```
 
 To make the run_bot.py file executable, cd into the directory and make it executable:
 
-```cd ~slack_bot/src \n chmod +x run_bot.py```
+```cd ~slack_bot/src```
+```chmod +x run_bot.py```
 
 To send reminders, we can have the file run in a cronjob.
 
