@@ -22,7 +22,7 @@ Adjust ```slack_credentials_example.py``` file and add your auth token. Save as 
 Adjust ```user_info_example.py```:
 
 - Add the username on your operating system
-- Add the names of your AWS profiles 
+- Add the names of your AWS profiles found in ```~/.aws/config``` file
 - Add the keypair-username combinations as shown in the example. 
 - Save as ```user_info.py```.
 
