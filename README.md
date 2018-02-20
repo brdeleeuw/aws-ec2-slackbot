@@ -27,7 +27,8 @@ To make the run_bot.py file executable, cd into the directory and make it execut
 
 ```
 cd ~slack_bot/src
-chmod +x run_bot.py```
+chmod +x run_bot.py
+```
 
 To send reminders, we can have the file run in a cronjob.
 
