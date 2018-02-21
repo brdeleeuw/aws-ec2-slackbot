@@ -1,6 +1,6 @@
 # aws-ec2-slackbot
 
-Simple bot for the Slack messaging app that checks for active EC2 instances (Amazon Web Services) and sends a reminder.
+Simple bot I wrote to avoid having unecessary active instances on Amazon Web Services (AWS). It uses AWS CLI to check for active EC2 instances / EMR clusters and sends reminders via the Slack messaging app to the corresponding user.
 
 ## Requirements:
 
