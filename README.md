@@ -13,6 +13,13 @@ Simple bot I wrote to avoid having unecessary active instances on Amazon Web Ser
 
 ## Configuration 
 
+Cloning the repository into your home folder: 
+
+```
+cd ~/
+git clone https://github.com/brdeleeuw/aws-ec2-slackbot
+```
+
 Ìf you don't have the Python Slackclient module:
 
 ```pip install slackclient```
@@ -32,6 +39,10 @@ To make the run_bot.py file executable, cd into the directory and make it execut
 cd ~slack_bot/src
 chmod +x run_bot.py
 ```
+
+You may need to adjust the ```log_file_path``` variable in ```aws_functions.py``` to the directory where you cloned the repository to if you didn't choose the home directory.  
+
+
 ## Running automatically
 
 To send reminders, we can have the file run in a cronjob.
@@ -46,5 +57,3 @@ Then add whenever you want the file to run. Example of a crontab entry to send a
 00       17           *             *        *        cd ~/slack_bot/src/ && /usr/bin/python ~/slack_bot/src/run_bot.py  >> ~/slack_bot/src/logs/run_bot_output.txt  2>&1
 30       17           *             *        *        cd ~/slack_bot/src/ && /usr/bin/python ~/slack_bot/src/run_bot.py  >> ~/slack_bot/src/logs/run_bot_output.txt  2>&1
 ```
-
-
