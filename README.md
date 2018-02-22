@@ -40,6 +40,8 @@ cd ~slack_bot/src
 chmod +x run_bot.py
 ```
 
+Also, don't remove the ```#!/usr/bin/python``` shebang at the top of the script. 
+
 You may need to adjust the ```log_file_path``` variable in ```aws_functions.py``` to the directory where you cloned the repository to if you didn't choose the home directory.  
 
 
@@ -52,8 +54,9 @@ To send reminders, we can have the file run in a cronjob.
 Then add whenever you want the file to run. Example of a crontab entry to send a reminder at 16:30, 17:00 and 17:30 every day:
 
 ```
-#min    #hour   day-of-month    month   day-of-week     commannd
-30       16           *             *        *        cd ~/slack_bot/src/ && /usr/bin/python ~/slack_bot/src/run_bot.py  >> ~/slack_bot/src/logs/run_bot_output.txt  2>&1
-00       17           *             *        *        cd ~/slack_bot/src/ && /usr/bin/python ~/slack_bot/src/run_bot.py  >> ~/slack_bot/src/logs/run_bot_output.txt  2>&1
-30       17           *             *        *        cd ~/slack_bot/src/ && /usr/bin/python ~/slack_bot/src/run_bot.py  >> ~/slack_bot/src/logs/run_bot_output.txt  2>&1
+#min hour day-of-month  month  day-of-week  commannd
+30    16        *         *        *         cd ~/aws-ec2-slackbot/src/ && /usr/bin/python ~/aws-ec2-slackbot/src/run_bot.py  >> ~/aws-ec2-slackbot/src/logs/run_bot_output.txt  2>&1
+00    17        *         *        *         cd ~/aws-ec2-slackbot/src/ && /usr/bin/python ~/aws-ec2-slackbot/src/run_bot.py  >> ~/aws-ec2-slackbot/src/logs/run_bot_output.txt  2>&1
+30    17        *         *        *         cd ~/aws-ec2-slackbot/src/ && /usr/bin/python ~/aws-ec2-slackbot/src/run_bot.py  >> ~/aws-ec2-slackbot/src/logs/run_bot_output.txt  2>&1
 ```
+
