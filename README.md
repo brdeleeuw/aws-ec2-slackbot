@@ -36,7 +36,7 @@ Adjust ```user_info_example.py```:
 To make the run_bot.py file executable, cd into the directory and make it executable:
 
 ```
-cd ~slack_bot/src
+cd ~aws-ec2-slackbot/src
 chmod +x run_bot.py
 ```
 
